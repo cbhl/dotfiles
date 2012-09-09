@@ -6,7 +6,7 @@ Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
        , commands = [ Run Weather "CYKF" ["-t","<station>: <skyCondition> <tempC>C (<hour>)","-L","19","-H","25","--high","red","--low","lightblue"] 36070
     		    , Run Uptime ["-t","<days><hours><minutes>","-S","True"] 610
                     , Run Memory ["-t","<total>M<usedratio>%"] 110
-                    , Run Com "/home/pi/bin/load.sh" [] "load" 70
+                    , Run Com "/home/m9chang/bin/load.sh" [] "load" 70
     		    , Run Date "%a %Y-%_d-%_m %H:%M" "date" 30
     		    , Run StdinReader
                     ]
